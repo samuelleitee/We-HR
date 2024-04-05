@@ -1,0 +1,32 @@
+:root {
+    /*========== COLOR STYLES ==========*/
+  --primary-title-color: #303030;
+  --primary-subtitle-color: #686868;
+  --secondary-title-color: #303030;
+  --secondary-subtitle-color: #686868;
+  --main-color: #ff5151;
+  --secondary-color: #ff9b6a;
+  --tertiary-color: #161e54;
+  --background-color: #fafafa;
+  --just-white: #fff;
+  --just-black:#000;
+
+  /*========== TEXT STYLES ==========*/
+    --letter-spacing: 0.05em;
+    
+  --title-large: 500 2.25rem/1.17 'Poppins', sans-serif;
+  --title-medium: 500 1.125rem/1.6 'Poppins', sans-serif;
+  --title-small: 500 1rem/1.5 'Poppins', sans-serif;
+
+  --subtitle-large: 400 1.125rem/1.7 'Roboto', sans-serif;
+  --subtitle-medium: 400 1rem/1.5 'Roboto', sans-serif;
+  --subtitle-small: 400 0.875rem/1.4 'Roboto', sans-serif;
+
+  --body-large: 400 1rem/1.5 'Roboto', sans-serif;
+  --body-medium: 400 0.875rem/1.4 'Roboto', sans-serif;
+  --body-small: 400 0.75rem/1.5 'Roboto', sans-serif;
+  --body-very-small: 400 0.625rem/1.4 'Roboto', sans-serif;
+
+  --capitalised: 400 0.875rem/1.4 'Poppins', sans-serif;
+}
+
