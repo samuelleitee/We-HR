@@ -1,9 +1,18 @@
-.label{
-
+.label {
+    font: var(--body-medium);
 }
 
-.input{
+.input {
     width: 100%;
     padding: 1rem;
     
+    color: var(--tertiary-color);
+    font: var(--body-medium);
+
+    border: 1px solid var(--tertiary-color);
+    border-radius: 4px;
+}
+
+.input::placeholder {
+    color: var(--primary-subtitle-color);
 }
