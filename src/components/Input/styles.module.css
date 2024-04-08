@@ -1,5 +1,6 @@
 .label {
     font: var(--body-medium);
+    text-transform: capitalize;
 }
 
 .input {
