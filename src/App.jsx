@@ -1,11 +1,11 @@
-import { LoginButton } from "./components/LoginButton"
 import "./index.css"
+import { Router } from "./routes"
 
 function App() {
 
   return (
     <>
-    
+      <Router />
     </>
   )
 }
