@@ -1,0 +1,20 @@
+.sidebar {
+    height: 100vh;
+    max-width: fit-content;
+    padding: 1.875rem;
+}
+
+.sidebar nav {
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+}
+
+.sidebar nav ul {
+    list-style: none;
+}
+
+
+.sidebar nav ul li a {
+    text-decoration: none;
+}
