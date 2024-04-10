@@ -1,5 +1,14 @@
-import { Input } from "../../components/Input"
+import React from "react";
+import { Input } from "../../components/Input";
 import { LoginButton } from "../../components/LoginButton";
+import {
+  TrianLeft,
+  TrianRight,
+  Logo,
+  PointsLeft,
+  PointsRight,
+} from "../../components/IconLogin";
+import styles from "./styles.module.css";
 
 import { Routes, Route, useNavigation } from "react-router-dom"
 import { Logo } from "../../components/Logo";
