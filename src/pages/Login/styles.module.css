@@ -1,17 +1,17 @@
 .buttonContainer {
-    display: flex;
-    gap: 1.5rem;
+  display: flex;
+  gap: 1.5rem;
 }
 
 .container {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
 
-    min-height: 100vh;
+  min-height: 100vh;
 }
 
 .container section:nth-child(2) {
-    padding: 6rem;
+  padding: 6rem;
 }
 /* .left {
     padding: 32px;
@@ -54,6 +54,10 @@
  */
 
 .illustration {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
   position: relative;
   padding: 32px;
 }
@@ -85,25 +89,25 @@
 }
 
 .bottomTriangle {
-    position: absolute;
-    bottom: 32px;
-    right: 32px;
+  position: absolute;
+  bottom: 32px;
+  right: 32px;
 }
 
 .logo {
-    margin: auto;
-    height: fit-content;
-    width: fit-content;
+  height: fit-content;
+  width: fit-content;
 
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: calc(100vh * 30 / 100);
- }
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 64px
+}
 
- h1{
-    text-align: center;
-    font-size: 36px;
-    width: 380px;
+.logo h1 {
+  font: var(--title-large);
+  text-align: center;
+  max-width: 380px;
+  color: var(--tertiary-color);
 }

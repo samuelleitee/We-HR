@@ -6,8 +6,8 @@ import { Dashboard } from '../pages/Dashboard';
 export function Router() {
     return (
         <Routes>
-            <Route path='/' element={<Dashboard />} />
-            <Route path='/login/*' element={<Login />} />
+            <Route path='/*' element={<Login />} />
+            <Route path='/dashboard' element={<Dashboard />} />
             <Route path='*' element={<Error />} />
         </Routes>
     )

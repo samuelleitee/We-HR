@@ -1,6 +1,6 @@
 import styles from "./styles.module.css"
 
-export function Logo() {
+export function TextLogo() {
     return (
         <h1 className={styles.logo}>WeHR</h1>
     )

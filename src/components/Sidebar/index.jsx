@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { Logo } from "../Logo";
+import { TextLogo } from "../TextLogo";
 
 import styles from "./styles.module.css"
 
@@ -7,7 +7,7 @@ export function Sidebar() {
     return (
         <aside className={styles.sidebar}>
             <nav>
-                <Logo />
+                <TextLogo />
 
                 <section>
                     <header>MAIN MENU</header>

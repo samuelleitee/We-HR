@@ -10,18 +10,41 @@ import {
 } from "../../components/IconLogin";
 import styles from "./styles.module.css";
 
-import { Routes, Route, useNavigation } from "react-router-dom"
-import { Logo } from "../../components/Logo";
-
-import styles from "./styles.module.css"
+import { Routes, Route, useNavigation } from "react-router-dom";
+import { TextLogo } from "../../components/TextLogo";
 
 export function Login() {
   return (
     <main className={styles.container}>
-      <section></section>
+      <section className={styles.illustration}>
+        <div className={styles.topTriangle}>
+          <TrianRight />
+        </div>
+
+        <div className={styles.pointsRight}>
+          <PointsLeft />
+          <PointsLeft />
+          <PointsLeft />
+        </div>
+
+        <div className={styles.logo}>
+          <h1>See your human resources in real time</h1>
+          <Logo />
+        </div>
+
+        <div className={styles.bottomTriangle}>
+          <TrianLeft />
+        </div>
+
+        <div className={styles.pointsLeft}>
+          <PointsRight />
+          <PointsRight />
+          <PointsRight />
+        </div>
+      </section>
 
       <section>
-        <Logo />
+        <TextLogo />
         <Routes>
           <Route path="/" element={<LoginForm />} />
           <Route path="/password-recovery" element={<PasswordRecoveryForm />} />
@@ -35,14 +58,12 @@ function LoginForm() {
   // const navigation = useNavigation();
 
   const handleSubmit = (event) => {
-    event.preventDefault()
-
-
-  }
+    event.preventDefault();
+  };
 
   const handleNavigate = () => {
     // navigation.navigate("/password-recovery")
-  }
+  };
 
   return (
     <form action="">
@@ -51,24 +72,26 @@ function LoginForm() {
 
       <div className={styles.buttonContainer}>
         <LoginButton text="LOGIN" dark type="submit" onClick={handleSubmit} />
-        <LoginButton text="FORGET PASSWORD?" type="button" onClick={handleNavigate} />
+        <LoginButton
+          text="FORGET PASSWORD?"
+          type="button"
+          onClick={handleNavigate}
+        />
       </div>
     </form>
-  )
+  );
 }
 
 function PasswordRecoveryForm() {
   // const navigation = useNavigation();
 
   const handleSubmit = (event) => {
-    event.preventDefault()
-
-
-  }
+    event.preventDefault();
+  };
 
   const handleNavigate = () => {
     // navigation.navigate("/login")
-  }
+  };
 
   return (
     <form action="">
@@ -76,9 +99,18 @@ function PasswordRecoveryForm() {
       <Input name="password" type="password" placeholder="8 - 10 characters" />
 
       <div className={styles.buttonContainer}>
-        <LoginButton text="RECOVER PASSWORD" dark type="submit" onClick={handleSubmit} />
-        <LoginButton text="BACK TO LOGIN" type="button" onClick={handleNavigate} />
+        <LoginButton
+          text="RECOVER PASSWORD"
+          dark
+          type="submit"
+          onClick={handleSubmit}
+        />
+        <LoginButton
+          text="BACK TO LOGIN"
+          type="button"
+          onClick={handleNavigate}
+        />
       </div>
     </form>
-  )
+  );
 }
