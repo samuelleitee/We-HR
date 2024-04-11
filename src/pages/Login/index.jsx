@@ -48,6 +48,7 @@ export function Login() {
         <Routes>
           <Route path="/" element={<LoginForm />} />
           <Route path="/password-recovery" element={<PasswordRecoveryForm />} />
+          <Route path="/signin" element={<SignIn />} />
         </Routes>
       </section>
     </main>
@@ -114,3 +115,28 @@ function PasswordRecoveryForm() {
     </form>
   );
 }
+
+function SignIn() {
+  // const navigation = useNavigation();
+
+  const handleSubmit = (event) => {
+    event.preventDefault();
+  };
+
+  const handleNavigate = () => {
+    // navigation.navigate("/password-recovery")
+  };
+
+  return (
+    <form action="">
+      <Input name="email" type="email" placeholder="example@example" />
+      <Input name="senha" type="password" placeholder="8 - 10 characters" />
+
+      <div className={styles.buttonContainer}>
+        <LoginButton text="SIGN IN" dark type="submit" onClick={handleSubmit} />
+
+      </div>
+    </form>
+  );
+}
+

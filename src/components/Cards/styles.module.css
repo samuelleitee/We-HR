@@ -1,0 +1,17 @@
+.cardPosition {
+    display: flex;
+    flex-direction: column;
+    background-color: #FFEFE7;
+    border-radius: 10px;
+
+    width: 204px;
+    height: 136px;
+    align-items: center;
+    text-align: left;
+    padding: 20px 12px 12px 12px;
+}
+
+.title{
+    
+}
+
