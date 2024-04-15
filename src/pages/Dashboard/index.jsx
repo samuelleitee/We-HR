@@ -1,7 +1,7 @@
 import React from "react";
 import { Sidebar } from "../../components/Sidebar";
-import { ResourceCard } from "../../components/Cards"
-import { InfoCard } from "../../components/CardInfo";
+import { ResourceCard } from "../../components/cards/ResourceCards"
+import { InfoCard } from "../../components/cards/InfoCard";
 
 export function Dashboard() {
     return (
