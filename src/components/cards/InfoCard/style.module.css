@@ -1,0 +1,29 @@
+.container {
+    color: var(--tertiary-color);
+    padding: 1.25rem;
+}
+
+.container h1 {
+    font: var(--title-large);
+}
+
+.container h2 {
+    font: var(--title-medium);
+}
+
+.container span {
+    font: var(--body-small);
+    color: var(--secondary-title-color);
+    display: block;
+}
+
+.container .sexContainer .men, .container .sexContainer .women {
+    font: var(--body-small);
+    color: var(--primary-subtitle-color);
+}
+
+.container .sexContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
