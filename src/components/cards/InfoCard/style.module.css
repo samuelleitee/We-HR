@@ -1,20 +1,33 @@
 .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2.5rem;
+    align-content: center;
+    justify-content: center;
+    width: fit-content;
+
     color: var(--tertiary-color);
     padding: 1.25rem;
 }
 
 .container h1 {
     font: var(--title-large);
+    margin-bottom: 2rem;
 }
 
 .container h2 {
     font: var(--title-medium);
+    margin-bottom: 1.375rem;
 }
 
 .container span {
     font: var(--body-small);
     color: var(--secondary-title-color);
     display: block;
+}
+
+.container .data {
+    width: 117px;
 }
 
 .container .sexContainer .men, .container .sexContainer .women {
@@ -26,4 +39,18 @@
     display: flex;
     flex-direction: column;
     gap: 0.5rem;
+}
+
+.container .graphic {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    align-self: center;
+}
+
+.container .info {
+    padding: 0 0.625rem;
+    background: #FFEFE7;
+    border-radius: 4px;
 }
