@@ -2,7 +2,7 @@ import React from "react";
 import { Sidebar } from "../../components/Sidebar";
 import { ResourceCard } from "../../components/cards/ResourceCards"
 import { InfoCard } from "../../components/cards/InfoCard";
-import { UpcomingSchedule } from "../../components/UpcomingSchedule";
+import { RecentlyActivities } from './../../components/RecentlyActivity/index';
 
 export function Dashboard() {
     return (
@@ -13,7 +13,7 @@ export function Dashboard() {
         <ResourceCard title="New Employees" number="24" info="4 Departament" variant="employees" />
         <InfoCard title={"Total Employees"} number="216" men="120 Men" women="96 Women" grafico="Gráfico Aqui" info="+2 Past month" />
         <InfoCard title={"Talent Request"} number="16" men="6 Men" women="10 Women" grafico="Gráfico Aqui" info="+5% Past month" />
-        <UpcomingSchedule />
+        <RecentlyActivities />
       </>
     );
   }
