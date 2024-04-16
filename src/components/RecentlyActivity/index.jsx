@@ -1,6 +1,6 @@
 import styles from "./styles.module.css"
 
-export function UpcomingSchedule() {
+export function RecentlyActivities() {
     return(
         <section className={styles.schedule}>
             <header>
