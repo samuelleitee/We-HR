@@ -5,7 +5,7 @@ export function InfoCard({ title, number, men, women, grafico, info }) {
 
     return (
         <div className={styles.container}>
-            <div>
+            <div className={styles.data}>
                 <h2 className={styles.title}>{title}</h2>
                 <h1 className={styles.number}>{number}</h1>
                 <div className={styles.sexContainer}>
@@ -13,10 +13,10 @@ export function InfoCard({ title, number, men, women, grafico, info }) {
                     <span className={styles.women}>{women}</span>
                 </div>
             </div>
-            
-            <div>
+
+            <div className={styles.graphic}>
                 <div>{grafico}</div>
-                <span>{info}</span>
+                <span className={styles.info}>{info}</span>
             </div>
         </div>
     )
