@@ -1,0 +1,23 @@
+.container {
+    display: flex;
+    width: fit-content;
+    gap: 24px;
+    padding: 16px 32px 16px 0px;
+    align-items: center;
+}
+
+.text{
+    font:var(--primary-subtitle-color);
+}
+
+.links{
+    display: flex;
+    gap: 32px;
+}
+
+.links > a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+

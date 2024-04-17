@@ -12,6 +12,7 @@ import styles from "./styles.module.css";
 
 import { Routes, Route, useNavigation } from "react-router-dom";
 import { TextLogo } from "../../components/TextLogo";
+import { Oauth } from "../../components/Oauth";
 
 export function Login() {
   return (
@@ -79,6 +80,7 @@ function LoginForm() {
           onClick={handleNavigate}
         />
       </div>
+      <Oauth/>
     </form>
   );
 }
@@ -136,6 +138,8 @@ function SignIn() {
         <LoginButton text="SIGN IN" dark type="submit" onClick={handleSubmit} />
 
       </div>
+
+      <Oauth/>
     </form>
   );
 }
