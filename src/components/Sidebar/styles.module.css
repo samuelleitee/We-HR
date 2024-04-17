@@ -2,7 +2,6 @@
     height: 100vh;
     width: 100%;
     max-width: 242px;
-    padding-left: 1.875rem;
     padding-top: 20px;
     background: var(--background-color);
     overflow-y: auto;
@@ -20,6 +19,7 @@
     list-style: none;
     font: var(--title-small);
     width: 212px;
+    padding-left: 1.875rem;
 }
 
 .sidebar nav ul li {
@@ -44,4 +44,5 @@
     font: var(--body-small);
     color: var(--secondary-subtitle-color);
     padding: 0.625rem 0;
+    padding-left: 1.875rem;
 }
