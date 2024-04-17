@@ -4,3 +4,10 @@
     padding: 10px;
     text-align: center;
 }
+
+@media screen and (max-width: 834px) {
+    .logo {
+        font: 600 1.25rem/1.17 "Poppins", sans-serif;
+        padding: 1px 0;
+    }
+}
