@@ -46,3 +46,40 @@
     padding: 0.625rem 0;
     padding-left: 1.875rem;
 }
+
+@media screen and (max-width: 834px) {
+    .sidebar {
+        justify-content: center;
+        width: fit-content;
+        min-width: 90px;
+    }
+    .header {
+        text-align: center;
+        font: var(--body-very-small);
+        padding-left: 0;
+    }
+    .sidebar nav ul {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        width: 100%;
+        padding-left: 0;
+    }
+    .sidebar nav ul li span{
+        display: none;
+    }
+    .sidebar nav ul a {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 390px) {
+    .sidebar {
+        position: absolute;
+        left: -100%;
+    }
+}

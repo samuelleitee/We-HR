@@ -34,32 +34,32 @@ export function Sidebar() {
                         <Link to="/dashboard">
                             <li className={pathname.split("/")[1] === "dashboard" ? styles.active : null}>
                                 <img src={pathname.split("/")[1] === "dashboard" ? DashboardIconActive : DashboardIcon} />
-                                Dashboard
+                                <span>Dashboard</span>
                             </li>
                         </Link>
                         <Link to="/dashboard">
                             <li className={pathname.split("/")[1] === "recruitment" ? styles.active : null}>
                                 <img src={pathname.split("/")[1] === "recruitment" ? RecruitmentIconActive : RecruitmentIcon} />
-                                Recruitment
+                                <span>Recruitment</span>
                             </li>
                         </Link>
 
                         <Link to="/dashboard">
                             <li className={pathname.split("/")[1] === "schedule" ? styles.active : null}>
                                 <img src={pathname.split("/")[1] === "schedule" ? ScheduleIconActive : ScheduleIcon} />
-                                Schedule
+                                <span>Schedule</span>
                             </li>
                         </Link>
                         <Link to="/dashboard">
                             <li className={pathname.split("/")[1] === "employee" ? styles.active : null}>
                                 <img src={pathname.split("/")[1] === "employee" ? EmployeeIconActive : EmployeeIcon} />
-                                Employee
+                                <span>Employee</span>
                             </li>
                         </Link>
                         <Link to="/dashboard">
                             <li className={pathname.split("/")[1] === "department" ? styles.active : null}>
                                 <img src={pathname.split("/")[1] === "department" ? DepartmentIconActive : DepartmentIcon} />
-                                Department
+                                <span>Department</span>
                             </li>
                         </Link>
                     </ul>
@@ -71,13 +71,13 @@ export function Sidebar() {
                         <Link to="/dashboard">
                             <li className={pathname.split("/")[1] === "support" ? styles.active : null}>
                                 <img src={pathname.split("/")[1] === "support" ? SupportIconActive : SupportIcon} />
-                                Support
+                                <span>Support</span>
                             </li>
                         </Link>
                         <Link to="/dashboard">
                             <li className={pathname.split("/")[1] === "settings" ? styles.active : null}>
                                 <img src={pathname.split("/")[1] === "settings" ? SettingsIconActive : SettingsIcon} />
-                                Settings
+                                <span>Settings</span>
                             </li>
                         </Link>
                     </ul>
