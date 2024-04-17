@@ -1,4 +1,3 @@
-import React from "react";
 import { Sidebar } from "../../components/Sidebar";
 import { ResourceCard } from "../../components/cards/ResourceCards"
 import { InfoCard } from "../../components/cards/InfoCard";
@@ -6,6 +5,8 @@ import { RecentlyActivities } from './../../components/RecentlyActivity/index';
 import { Announcement } from "../../components/Announcement";
 
 import styles from "./styles.module.css"
+import { UpcomingSchedule } from "../../components/UpcomingSchedule";
+import { Header } from "../../components/Header";
 
 
 export function Dashboard() {
@@ -13,6 +14,7 @@ export function Dashboard() {
                 <div className={styles.container}>
                         <Sidebar />
                         <div className={styles.main}>
+                                <Header nome={"Admirra John"}/>
                                 <ResourceCard title="Available Position" number="24" info="4 Urgently needed" variant="positions" />
                                 <ResourceCard title="Job Open" number="10" info="4 Active hiring" variant="jobs" />
                                 <ResourceCard title="New Employees" number="24" info="4 Departament" variant="employees" />
@@ -22,6 +24,9 @@ export function Dashboard() {
                                 <Announcement message={"Meeting HR Department"} time={"Yesterday, 12:30 PM"} />
                                 <Announcement message={"IT Department need two more talents for UX/UI Designer position"} time={"Yesterday, 09:15 AM"} />
                                 <RecentlyActivities />
+                                <UpcomingSchedule message={"Review candidate applications"} time={"Today - 11.30 AM"}/>
+                                <UpcomingSchedule message={"Interview with candidates"} time={"Today - 10.30 AM"}/>
+                                <UpcomingSchedule message={"Short meeting with product designer from IT Departement"} time={"Today - 09.15 AM"}/>
                         </div>
                 </div>
         );
