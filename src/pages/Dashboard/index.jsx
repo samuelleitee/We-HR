@@ -2,7 +2,9 @@ import React from "react";
 import { Sidebar } from "../../components/Sidebar";
 import { ResourceCard } from "../../components/cards/ResourceCards"
 import { InfoCard } from "../../components/cards/InfoCard";
+import { RecentlyActivities } from './../../components/RecentlyActivity/index';
 import { Announcement } from "../../components/Announcement";
+
 
 export function Dashboard() {
     return (
@@ -16,6 +18,7 @@ export function Dashboard() {
         <Announcement message={"Outing schedule for every departement"} time={"5 Minutes ago"} pinned/>
         <Announcement message={"Meeting HR Department"} time={"Yesterday, 12:30 PM"}/>
         <Announcement message={"IT Department need two more talents for UX/UI Designer position"} time={"Yesterday, 09:15 AM"}/>
+        <RecentlyActivities />
       </>
     );
   }
