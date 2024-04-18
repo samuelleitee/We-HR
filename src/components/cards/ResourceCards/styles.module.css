@@ -5,6 +5,8 @@
 
     height: 136px;
     padding: 1.25rem 0.75rem 0.75rem 0.75rem;
+    width: 100%;
+    min-width: 204px;
 }
 
 .container h3 {

@@ -15,18 +15,27 @@ export function Dashboard() {
                         <Sidebar />
                         <div className={styles.main}>
                                 <Header nome={"Admirra John"}/>
-                                <ResourceCard title="Available Position" number="24" info="4 Urgently needed" variant="positions" />
-                                <ResourceCard title="Job Open" number="10" info="4 Active hiring" variant="jobs" />
-                                <ResourceCard title="New Employees" number="24" info="4 Departament" variant="employees" />
-                                <InfoCard title={"Total Employees"} number="216" men="120 Men" women="96 Women" grafico="Gráfico Aqui" info="+2 Past month" />
-                                <InfoCard title={"Talent Request"} number="16" men="6 Men" women="10 Women" grafico="Gráfico Aqui" info="+5% Past month" />
-                                <Announcement message={"Outing schedule for every departement"} time={"5 Minutes ago"} pinned />
-                                <Announcement message={"Meeting HR Department"} time={"Yesterday, 12:30 PM"} />
-                                <Announcement message={"IT Department need two more talents for UX/UI Designer position"} time={"Yesterday, 09:15 AM"} />
-                                <RecentlyActivities />
-                                <UpcomingSchedule message={"Review candidate applications"} time={"Today - 11.30 AM"}/>
-                                <UpcomingSchedule message={"Interview with candidates"} time={"Today - 10.30 AM"}/>
-                                <UpcomingSchedule message={"Short meeting with product designer from IT Departement"} time={"Today - 09.15 AM"}/>
+                                <div>
+                                        <div className={styles.resourceCards}>
+                                                <ResourceCard title="Available Position" number="24" info="4 Urgently needed" variant="positions" />
+                                                <ResourceCard title="Job Open" number="10" info="4 Active hiring" variant="jobs" />
+                                                <ResourceCard title="New Employees" number="24" info="4 Departament" variant="employees" />
+
+                                        </div>
+                                        <div className={styles.infoCards}>
+                                                <InfoCard title={"Total Employees"} number="216" men="120 Men" women="96 Women" grafico="Gráfico Aqui" info="+2 Past month" />
+                                                <InfoCard title={"Talent Request"} number="16" men="6 Men" women="10 Women" grafico="Gráfico Aqui" info="+5% Past month" />
+                                        </div>
+                                        <div className={styles.announcement}>
+                                                <Announcement message={"Outing schedule for every departement"} time={"5 Minutes ago"} pinned />
+                                                <Announcement message={"Meeting HR Department"} time={"Yesterday, 12:30 PM"} />
+                                                <Announcement message={"IT Department need two more talents for UX/UI Designer position"} time={"Yesterday, 09:15 AM"} />
+                                        </div>
+                                </div>
+
+                                <div className={styles.activities}>
+                                        <RecentlyActivities />
+                                </div>
                         </div>
                 </div>
         );

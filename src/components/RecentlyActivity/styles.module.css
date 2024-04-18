@@ -1,18 +1,19 @@
 .container {
-    display: flex;
-    flex-direction: column;
-
     background: var(--tertiary-color);
     color: #FFF;
+    min-width: 427px;
+    width: 100%;
+    border-radius: 10px;
 }
 
 .container header {
     background: #1B204A;
     padding: 0.625rem 0.625rem 0.625rem 1.5rem;
+    border-radius: 10px;
 }
 
 .container main {
-    padding: 0.625rem 0.625rem 0.625rem 1.5rem;
+    padding: 1.625rem 1.5rem;
 }
 
 .container main .text {
