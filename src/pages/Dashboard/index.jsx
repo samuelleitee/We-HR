@@ -1,4 +1,3 @@
-import React from "react";
 import { Sidebar } from "../../components/Sidebar";
 import { ResourceCard } from "../../components/cards/ResourceCards"
 import { InfoCard } from "../../components/cards/InfoCard";
@@ -6,6 +5,8 @@ import { RecentlyActivities } from './../../components/RecentlyActivity/index';
 import { Announcement } from "../../components/Announcement";
 
 import styles from "./styles.module.css"
+import { UpcomingSchedule } from "../../components/UpcomingSchedule";
+import { Header } from "../../components/Header";
 
 
 export function Dashboard() {
@@ -13,6 +14,7 @@ export function Dashboard() {
                 <div className={styles.container}>
                         <Sidebar />
                         <div className={styles.main}>
+                                <Header nome={"Admirra John"}/>
                                 <div>
                                         <div className={styles.resourceCards}>
                                                 <ResourceCard title="Available Position" number="24" info="4 Urgently needed" variant="positions" />

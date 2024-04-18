@@ -1,0 +1,34 @@
+.container {
+    display: flex;
+    width: 100%;
+
+    justify-content: space-between;
+    padding: 23px 50px;
+}
+
+.input {
+    height: 44px;
+}
+
+.profile {
+    gap: 30px;
+    display: flex;
+}
+
+.icons {
+    display: flex;
+}
+
+.menu{
+
+}
+
+.user{
+    display: flex;
+}
+
+.name{
+    font: var(--title-small);
+    color: var(--tertiary-color);
+    gap: 4px;
+}
