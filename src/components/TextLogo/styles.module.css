@@ -5,7 +5,7 @@
     text-align: center;
 }
 
-@media screen and (max-width: 834px) {
+@media screen and (max-width: 982px) {
     .logo {
         font: 600 1.25rem/1.17 "Poppins", sans-serif;
         padding: 1px 0;

@@ -62,3 +62,9 @@
         width: fit-content;
     }
 }
+
+@media screen and (max-width: 466px) {
+    .container {
+        min-width: 0;
+    }
+}

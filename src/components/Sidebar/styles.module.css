@@ -47,7 +47,7 @@
     padding-left: 1.875rem;
 }
 
-@media screen and (max-width: 834px) {
+@media screen and (max-width: 982px) {
     .sidebar {
         justify-content: center;
         width: fit-content;
@@ -77,7 +77,7 @@
     }
 }
 
-@media screen and (max-width: 390px) {
+@media screen and (max-width: 616px) {
     .sidebar {
         position: absolute;
         left: -100%;

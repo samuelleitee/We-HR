@@ -47,3 +47,9 @@
 .employees h2 {
     color: #EE61CF;
 }
+
+@media screen and (max-width: 466px) {
+    .container {
+        min-width: 0;
+    }
+}

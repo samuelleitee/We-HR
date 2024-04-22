@@ -57,3 +57,9 @@
     background: #FFEFE7;
     border-radius: 4px;
 }
+
+@media screen and (max-width: 466px) {
+    .container {
+        min-width: 0;
+    }
+}
