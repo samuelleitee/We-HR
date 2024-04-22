@@ -7,7 +7,7 @@
 }
 
 .text{
-    font:var(--primary-subtitle-color);
+    font: var(--body-very-small);
 }
 
 .links{

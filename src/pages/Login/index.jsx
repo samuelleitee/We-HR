@@ -8,11 +8,11 @@ import {
   PointsLeft,
   PointsRight,
 } from "../../components/IconLogin";
-import styles from "./styles.module.css";
-
 import { Routes, Route, useNavigation } from "react-router-dom";
 import { TextLogo } from "../../components/TextLogo";
 import { Oauth } from "../../components/Oauth";
+
+import styles from "./styles.module.css";
 
 export function Login() {
   return (
@@ -47,8 +47,24 @@ export function Login() {
       <section>
         <TextLogo />
         <Routes>
-          <Route path="/" element={<LoginForm />} />
-          <Route path="/password-recovery" element={<PasswordRecoveryForm />} />
+          <Route
+            path="/"
+            element={
+              <>
+                <h1>Login</h1>
+                <LoginForm />
+              </>
+            }
+          />
+          <Route
+            path="/password-recovery"
+            element={
+              <>
+                <h1 className={styles.loginTitle}>Password Recovery</h1>
+                <PasswordRecoveryForm />
+              </>
+            }
+          />
           <Route path="/signin" element={<SignIn />} />
         </Routes>
       </section>
@@ -69,8 +85,14 @@ function LoginForm() {
 
   return (
     <form action="">
-      <Input name="email" type="email" placeholder="example@example" />
-      <Input name="password" type="password" placeholder="8 - 10 characters" />
+      <div>
+        <Input name="email" type="email" placeholder="example@example" />
+        <Input
+          name="password"
+          type="password"
+          placeholder="8 - 10 characters"
+        />
+      </div>
 
       <div className={styles.buttonContainer}>
         <LoginButton text="LOGIN" dark type="submit" onClick={handleSubmit} />
@@ -80,7 +102,7 @@ function LoginForm() {
           onClick={handleNavigate}
         />
       </div>
-      <Oauth/>
+      <Oauth />
     </form>
   );
 }
@@ -98,8 +120,14 @@ function PasswordRecoveryForm() {
 
   return (
     <form action="">
-      <Input name="email" type="email" placeholder="example@example" />
-      <Input name="password" type="password" placeholder="8 - 10 characters" />
+      <div>
+        <Input name="email" type="email" placeholder="example@example" />
+        <Input
+          name="password"
+          type="password"
+          placeholder="8 - 10 characters"
+        />
+      </div>
 
       <div className={styles.buttonContainer}>
         <LoginButton
@@ -114,6 +142,7 @@ function PasswordRecoveryForm() {
           onClick={handleNavigate}
         />
       </div>
+      <Oauth />
     </form>
   );
 }
@@ -136,11 +165,9 @@ function SignIn() {
 
       <div className={styles.buttonContainer}>
         <LoginButton text="SIGN IN" dark type="submit" onClick={handleSubmit} />
-
       </div>
 
-      <Oauth/>
+      <Oauth />
     </form>
   );
 }
-
