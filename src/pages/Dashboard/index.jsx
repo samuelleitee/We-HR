@@ -3,11 +3,11 @@ import { ResourceCard } from "../../components/cards/ResourceCards"
 import { InfoCard } from "../../components/cards/InfoCard";
 import { RecentlyActivities } from './../../components/RecentlyActivity/index';
 import { Announcement } from "../../components/Announcement";
-
-import styles from "./styles.module.css"
 import { UpcomingSchedule } from "../../components/UpcomingSchedule";
 import { Header } from "../../components/Header";
 import { SectionLimit } from "../../components/SectionLimit";
+
+import styles from "./styles.module.css"
 
 
 export function Dashboard() {
@@ -40,8 +40,22 @@ export function Dashboard() {
                                         <div className={styles.activities}>
                                                 <RecentlyActivities />
 
-                                                <SectionLimit title="Upcoming Schedule" footerTextFull="See All Schedules" footerTextLimited="See Less Schedules">
-                                                        <p>Olá</p>
+                                                <SectionLimit title="Upcoming Schedule" footerTextFull="See All Schedules" footerTextLimited="See Less Schedules" maxHeight="424px">
+                                                        <div>
+                                                                <div className={styles.priority}>
+                                                                        <h3>Priority</h3>
+                                                                        
+                                                                        <UpcomingSchedule message="Review candidate applications" time="Today - 11.30 AM" />
+                                                                </div>
+
+                                                                <div className={styles.other}>
+                                                                        <h3>Other</h3>
+
+                                                                        <UpcomingSchedule message="Interview with candidates" time="Today - 10.30 AM" />
+                                                                        <UpcomingSchedule message="Short meeting with product designer from IT Departement" time="Today - 09.15 AM" />
+                                                                        <UpcomingSchedule message="Sort Front-end developer candidates" time="Today - 11.30 AM" />
+                                                                </div>
+                                                        </div>
                                                 </SectionLimit>
                                         </div>
                                 </div>
