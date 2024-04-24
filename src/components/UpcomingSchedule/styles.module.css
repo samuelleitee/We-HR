@@ -1,9 +1,12 @@
 .container {
   display: flex;
+  justify-content: space-between;
   gap: 95px;
+  
   padding: 12px 16px;
   background: var(--background-color);
-  justify-content: space-between;
+  border: 1.5px solid #E0E0E0;
+  border-radius: 6px;
 }
 
 .text {

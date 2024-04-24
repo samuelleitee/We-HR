@@ -14,6 +14,29 @@
   padding-bottom: 34px;
 }
 
+.other {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  
+  margin-top: 9px;
+}
+
+.priority {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  
+  margin-top: 9px;
+}
+
+.priority h3, .other h3 {
+  font: var(--title-small);
+  font-size: 0.75rem;
+  color: var(--primary-subtitle-color);
+  margin-bottom: 8px;
+}
+
 .container .main {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -57,6 +80,7 @@
 .container .main .activities {
   display: flex;
   flex-direction: column;
+  gap: 20px;
 }
 
 @media screen and (max-width: 830px) {
