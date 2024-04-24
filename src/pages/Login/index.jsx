@@ -8,7 +8,7 @@ import {
   PointsLeft,
   PointsRight,
 } from "../../components/IconLogin";
-import { Routes, Route, useNavigation } from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
 import { TextLogo } from "../../components/TextLogo";
 import { Oauth } from "../../components/Oauth";
 
@@ -51,7 +51,7 @@ export function Login() {
             path="/"
             element={
               <>
-                <h1>Login</h1>
+                <h1 className={styles.loginTitle}>Login</h1>
                 <LoginForm />
               </>
             }
@@ -73,18 +73,17 @@ export function Login() {
 }
 
 function LoginForm() {
-  // const navigation = useNavigation();
-
   const handleSubmit = (event) => {
     event.preventDefault();
+    navigation.navigate("/dashboard")
   };
 
   const handleNavigate = () => {
-    // navigation.navigate("/password-recovery")
+    navigation.navigate("/password-recovery")
   };
 
   return (
-    <form action="">
+    <form onSubmit={handleSubmit}>
       <div>
         <Input name="email" type="email" placeholder="example@example" />
         <Input
@@ -95,7 +94,7 @@ function LoginForm() {
       </div>
 
       <div className={styles.buttonContainer}>
-        <LoginButton text="LOGIN" dark type="submit" onClick={handleSubmit} />
+        <LoginButton text="LOGIN" dark type="submit" />
         <LoginButton
           text="FORGET PASSWORD?"
           type="button"
@@ -108,18 +107,12 @@ function LoginForm() {
 }
 
 function PasswordRecoveryForm() {
-  // const navigation = useNavigation();
-
-  const handleSubmit = (event) => {
-    event.preventDefault();
-  };
-
   const handleNavigate = () => {
-    // navigation.navigate("/login")
+    navigation.navigate("/")
   };
 
   return (
-    <form action="">
+    <form onSubmit={handleNavigate}>
       <div>
         <Input name="email" type="email" placeholder="example@example" />
         <Input
@@ -134,7 +127,7 @@ function PasswordRecoveryForm() {
           text="RECOVER PASSWORD"
           dark
           type="submit"
-          onClick={handleSubmit}
+          onClick={handleNavigate}
         />
         <LoginButton
           text="BACK TO LOGIN"
