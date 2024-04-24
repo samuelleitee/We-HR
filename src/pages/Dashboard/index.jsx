@@ -7,6 +7,7 @@ import { Announcement } from "../../components/Announcement";
 import styles from "./styles.module.css"
 import { UpcomingSchedule } from "../../components/UpcomingSchedule";
 import { Header } from "../../components/Header";
+import { Graphic } from "../../components/Graphic";
 
 
 export function Dashboard() {
@@ -25,7 +26,7 @@ export function Dashboard() {
                                                 </div>
                                                 <div className={styles.infoCards}>
                                                         <InfoCard title={"Total Employees"} number="216" men="120 Men" women="96 Women" grafico="Gráfico Aqui" info="+2 Past month" />
-                                                        <InfoCard title={"Talent Request"} number="16" men="6 Men" women="10 Women" grafico="Gráfico Aqui" info="+5% Past month" />
+                                                        <InfoCard title={"Talent Request"} number="16" men="6 Men" women="10 Women" grafico={<Graphic/>} info="+5% Past month" />
                                                 </div>
                                                 <div className={styles.announcement}>
                                                         <Announcement message={"Outing schedule for every departement"} time={"5 Minutes ago"} pinned />
