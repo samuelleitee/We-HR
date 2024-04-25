@@ -10,6 +10,7 @@
 
 .menu {
   display: none;
+  position: relative;
 }
 
 .line {
@@ -38,6 +39,7 @@
   display: flex;
   gap: 30px;
   align-items: center;
+  justify-content: center;
 }
 
 .user {
@@ -50,6 +52,12 @@
   display: flex;
   gap: 4px;
   font: var(--title-small);
+}
+
+.name a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .name h3 {
@@ -65,16 +73,7 @@
     display: flex;
     gap: 17px;
     align-items: center;
-    padding-left: 13px;
-  }
-
-  .menu {
-    display: flex;
-    flex-direction: column;
-    width: 24px;
-    height: 24px;
-    padding: 6px 3px;
-    gap: 3px;
+    padding-left: 50px;
   }
 
   .line {
@@ -128,5 +127,12 @@
     display: none;
   }
 
-
+  .menu {
+    display: flex;
+    flex-direction: column;
+    width: 24px;
+    height: 24px;
+    padding: 6px 3px;
+    gap: 3px;
+  }
 }

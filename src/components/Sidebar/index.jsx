@@ -18,11 +18,13 @@ import SettingsIconActive from "../../assets/ic_settings_active.svg"
 
 import styles from "./styles.module.css"
 
-export function Sidebar() {
+export function Sidebar({ showMenu }) {
     const { pathname } = window.location
 
+    // showMenu ? console.log("True") : console.log("False")
+
     return (
-        <aside className={styles.sidebar}>
+        <aside className={`${styles.sidebar} ${showMenu ? styles.showSidebar : null}`}>
             <nav>
                 <Link className={styles.logo} to="/dashboard">
                     <TextLogo />

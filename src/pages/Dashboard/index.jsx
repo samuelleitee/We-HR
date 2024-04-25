@@ -9,15 +9,18 @@ import { Graphic } from "../../components/Graphic";
 import { SectionLimit } from "../../components/SectionLimit";
 
 import styles from "./styles.module.css"
+import React from "react";
 
 
 
 export function Dashboard() {
+        const [showMenu, setShowMenu] = React.useState()
+
         return (
                 <div className={styles.container}>
-                        <Sidebar />
+                        <Sidebar showMenu={showMenu}/>
                         <div className={styles.section}>
-                                <Header nome={"Admirra John"} />
+                                <Header nome={"Admirra John"} showMenu={showMenu} setShowMenu={setShowMenu}/>
                                 <div className={styles.main}>
                                         <div>
                                                 <div className={styles.resourceCards}>

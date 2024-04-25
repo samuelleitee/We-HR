@@ -3,18 +3,19 @@ import bell from "../../assets/ic_bell.svg";
 import message from "../../assets/ic_message.svg";
 import profile from "../../assets/ic_profile.svg";
 import arrow from "../../assets/ic_arrow.svg";
-import styles from "./styles.module.css";
 import search from "./../../assets/ic_search.svg"
 
-export function Header({ nome }) {
+import styles from "./styles.module.css";
+
+export function Header({ nome, showMenu, setShowMenu }) {
   return (
     <header className={styles.container}>
       <div className={styles.menudiv}>
 
-        <div className={styles.menu}>
-          <div className={styles.line}></div>
-          <div className={styles.line}></div>
-          <div className={styles.line}></div>
+        <div className={styles.menu} onClick={() => setShowMenu(!showMenu)} style={showMenu ? { zIndex: 10, left: "90px", height: "fit-content" } : null}>
+          <div className={styles.line} style={showMenu ? { display: "none" } : null}></div>
+          <div className={styles.line} style={showMenu ? { transform: 'rotate(45deg)', position: "absolute" } : null}></div>
+          <div className={styles.line} style={showMenu ? { transform: 'rotate(-45deg)', position: "absolute" } : null}></div>
         </div>
 
         <img src={search} alt="" />
