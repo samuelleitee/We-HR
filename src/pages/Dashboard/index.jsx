@@ -5,8 +5,9 @@ import { RecentlyActivities } from './../../components/RecentlyActivity/index';
 import { Announcement } from "../../components/Announcement";
 import { UpcomingSchedule } from "../../components/UpcomingSchedule";
 import { Header } from "../../components/Header";
-import { Graphic } from "../../components/Graphic";
 import { SectionLimit } from "../../components/SectionLimit";
+import grafic from "../../assets/ic_graphic01.svg"
+import grafic2 from "../../assets/ic_graphic02.svg"
 
 import styles from "./styles.module.css"
 
@@ -27,8 +28,8 @@ export function Dashboard() {
 
                                                 </div>
                                                 <div className={styles.infoCards}>
-                                                        <InfoCard title={"Total Employees"} number="216" men="120 Men" women="96 Women" grafico="Gráfico Aqui" info="+2 Past month" />
-                                                        <InfoCard title={"Talent Request"} number="16" men="6 Men" women="10 Women" grafico={<Graphic/>} info="+5% Past month" />
+                                                        <InfoCard title={"Total Employees"} number="216" men="120 Men" women="96 Women" grafico={grafic} info="+2 Past month" />
+                                                        <InfoCard title={"Talent Request"} number="16" men="6 Men" women="10 Women" grafico={grafic2} info="+5% Past month" />
                                                 </div>
                                                 <div className={styles.announcement}>
                                                         <SectionLimit title="Announcement" footerTextFull="See All Announcement" footerTextLimited="See Less Announcement" maxHeight="289px">
