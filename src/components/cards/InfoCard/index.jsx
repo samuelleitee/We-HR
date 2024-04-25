@@ -15,7 +15,7 @@ export function InfoCard({ title, number, men, women, grafico, info }) {
             </div>
 
             <div className={styles.graphic}>
-                <div>{grafico}</div>
+                <img src={grafico} alt="" />
                 <span className={styles.info}>{info}</span>
             </div>
         </div>

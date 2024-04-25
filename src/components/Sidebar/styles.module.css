@@ -48,6 +48,10 @@
     padding-left: 1.875rem;
 }
 
+.page:hover{
+    color: var(--main-color)
+}
+
 @media screen and (max-width: 982px) {
     .sidebar {
         justify-content: center;
