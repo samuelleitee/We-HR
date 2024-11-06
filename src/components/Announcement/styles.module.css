@@ -25,5 +25,11 @@
 
 .icons {
   display: flex;
+  align-items: center;
   gap: 20px;
+}
+
+.icons img {
+  height: 24px;
+  width: 24px;
 }
